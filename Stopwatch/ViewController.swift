@@ -36,8 +36,10 @@ class ViewController: UIViewController {
         timer.invalidate()
     
     }
-    
-    @IBAction func reset(_ sender: Any) {
+    // Add a Description
+     
+     
+        @IBAction func reset(_ sender: Any) {
     
         timer.invalidate()
         
