@@ -9,7 +9,45 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var timer = Timer()
 
+    var time = 0
+  
+    
+    @IBOutlet var timerLabel: UILabel!
+    
+    func increaseTimer() {
+        
+        time += 1
+        
+        timerLabel.text = "\(time)"
+    }
+    
+    @IBAction func play(_ sender: Any) {
+    
+    timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("increaseTimer"), userInfo: nil, repeats: true)
+    
+    }
+    
+    
+    @IBAction func pause(_ sender: Any) {
+    
+        timer.invalidate()
+    
+    }
+    
+    @IBAction func reset(_ sender: Any) {
+    
+        timer.invalidate()
+        
+        time = 0
+        
+        timerLabel.text = "0"
+    
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
