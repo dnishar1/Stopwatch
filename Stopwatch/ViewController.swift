@@ -37,8 +37,9 @@ class ViewController: UIViewController {
     
     }
     // Add a Description
-     
-     
+    
+        // This functionrestes the time and invalidates the timer once its reset and 
+        // sets the starting position at 0.
         @IBAction func reset(_ sender: Any) {
     
         timer.invalidate()
