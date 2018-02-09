@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         timerLabel.text = "\(time)"
     }
-    
+    // IB Action for play button
     @IBAction func play(_ sender: Any) {
     
     timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("increaseTimer"), userInfo: nil, repeats: true)
