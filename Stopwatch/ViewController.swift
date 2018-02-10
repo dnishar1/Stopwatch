@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         timer.invalidate()
     
     }
-    // Add a Description
     
         // This functionrestes the time and invalidates the timer once its reset and 
         // sets the starting position at 0.
