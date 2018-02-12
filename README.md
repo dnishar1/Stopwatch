@@ -1,3 +1,3 @@
 # Stop Watch
 
-A simple app of stopwatch for iOS
+A simple application of stopwatch for iOS
